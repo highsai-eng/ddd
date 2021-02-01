@@ -45,6 +45,14 @@ public final class Money {
         return new Money(this.amount.add(arg.amount), this.currency);
     }
 
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
